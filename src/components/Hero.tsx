@@ -1,9 +1,12 @@
-import { motion } from 'motion/react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
+import { motion } from "motion/react";
+import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function Hero() {
   return (
-    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section
+      id="home"
+      className="relative min-h-screen flex items-center justify-center overflow-hidden"
+    >
       {/* Background Image */}
       <div className="absolute inset-0">
         <ImageWithFallback
@@ -15,33 +18,48 @@ export function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center text-white px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+        {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-           style={{ fontFamily: "Playfair Display, serif",textShadow:"0 10px 30px rgba(0,0,0,0.8)",letterSpacing:"4px",textTransform:"uppercase" }}
-          className="text-5xl md:text-7xl font-bold mb-8"
+          style={{
+            fontFamily: "Playfair Display, serif",
+            textShadow: "0 10px 30px rgba(0,0,0,0.8)",
+            letterSpacing: "4px",
+            textTransform: "uppercase",
+          }}
+          className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-3xl mx-auto"
         >
-          DYNAMIQUE STUDIO PHOTOGRAPHIE
+          Dynamique Studio Photographie
         </motion.h1>
+
+        {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          style={{ fontFamily: "Playfair Display, serif", textTransform: "uppercase" }}
-          className="text-xl md:text-1.5xl mb-5 text-gray-200"
+          style={{
+            fontFamily: "Playfair Display, serif",
+            textTransform: "uppercase",
+          }}
+          className="text-base sm:text-lg md:text-xl mb-4 text-gray-200"
         >
-            L’instant capturé avec passion
+          L’instant capturé avec passion
         </motion.p>
+
+        {/* Description */}
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-1xl mb-8 text-gray-200"
+          transition={{ duration: 0.8, delay: 0.3 }}
+          className="text-sm sm:text-base md:text-lg mb-8 text-gray-200"
         >
           Studio photo professionnel • Portrait • Événement • Produit
         </motion.p>
+
+        {/* Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -50,20 +68,21 @@ export function Hero() {
         >
           <a
             href="/galerie"
-            className="bg-white text-black px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors"
+            className="bg-white text-black px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-gray-100 transition-colors"
           >
             Voir la galerie
           </a>
+
           <a
             href="#contact"
-            className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-colors"
+            className="border-2 border-white text-white px-6 py-3 sm:px-8 sm:py-4 rounded-full font-semibold hover:bg-white hover:text-black transition-colors"
           >
             Me contacter
           </a>
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
+      {/* Scroll indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
