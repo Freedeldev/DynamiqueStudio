@@ -3,10 +3,6 @@ import { ImageWithFallback } from './figma/ImageWithFallback';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import { useState } from 'react';
 import { X } from 'lucide-react';
-import portraitImg from "../assets/imgs/photo60.jpg";
-import portraitImg2 from "../assets/imgs/photo57.jpg";
-import portraitImg3 from "../assets/imgs/photo59.jpeg";
-
 
 const galleryImages = [
   {
@@ -215,9 +211,9 @@ const galleryImages = [
   },
   {
     id: 35,
-    src: portraitImg,
-    alt: 'Grand pere posant pour une séance de portrait à l\'extérieur avec un éclairage naturel',
-    category: 'portrait',
+    src: 'https://res.cloudinary.com/deoyusg94/image/upload/v1772827573/IMG_0382_gbjzeg.jpg',
+    alt: 'Petite fille posant pour une séance de portrait en studio avec un éclairage doux',
+    category: 'Famille',
   },
   {
     id: 36,
@@ -227,13 +223,13 @@ const galleryImages = [
   },
   {
     id: 37,
-    src: portraitImg2,
+    src: 'https://res.cloudinary.com/deoyusg94/image/upload/v1772815156/photo52_bsjh59.jpg',
     alt: 'Jeune femme posant dans la nature avec une éclairage naturel ',
     category: 'Portrait',
   },
   {
     id: 38,
-    src: portraitImg3,
+    src: 'https://res.cloudinary.com/deoyusg94/image/upload/v1772827613/IMG_0532_bzyhcl.jpg',
     alt: 'Jeune artiste posant pour une séance de portrait ',
     category: 'Portrait',
   },
