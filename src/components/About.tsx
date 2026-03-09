@@ -4,7 +4,7 @@ import aboutImg from "../assets/imgs/about.jpg";
 import { ImageWithFallback } from './figma/ImageWithFallback';
 
 const stats = [
-  { icon: Camera, value: '10+', label: 'Années d\'expérience' },
+  { icon: Camera, value: '5+', label: 'Années d\'expérience' },
   { icon: Users, value: '500+', label: 'Clients satisfaits' },
   { icon: Award, value: '10+', label: 'Récompenses' },
 ];

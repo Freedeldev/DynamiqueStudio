@@ -73,7 +73,7 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>+229 0196571070</li>
               <li>frejusdery@gmail.com</li>
-              <li>Cotonou, Lobozounkpa</li>
+              <li>Bénin,Cotonou </li>
             </ul>
           </div>
         </div>
